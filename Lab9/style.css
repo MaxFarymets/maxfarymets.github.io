@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #3e7dbd, #c2dbfb);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.score {
+  background: #00aaff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.card {
+  width: 170px;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  object-fit: contain;
+}
+
+button {
+  background: lime;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  background: #55ff55;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#roundInfo {
+  color: #fff;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
