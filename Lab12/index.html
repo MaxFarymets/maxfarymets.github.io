@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Trainer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="main-block">
+    <h1>Language Trainer</h1>
+
+    <div class="difficulty">
+      <h3>Рівень складності</h3>
+      <label><input type="radio" name="level" value="easy" checked> Початковий</label><br>
+      <label><input type="radio" name="level" value="medium"> Середній</label><br>
+      <label><input type="radio" name="level" value="hard"> Високий</label>
+    </div>
+
+    <div class="word-card" id="wordCard">hello</div>
+
+    <p class="step-info">
+      Слово <span id="currentIndex">1</span> із <span id="totalWords">10</span>
+    </p>
+
+    <input type="text" id="userInput" placeholder="Введіть переклад...">
+
+    <button id="btnCheck">Перевірити</button>
+
+    <div class="score">
+      <span class="correct">Вірно: <span id="good">0</span></span>
+      <span class="wrong">Невірно: <span id="bad">0</span></span>
+    </div>
+  </div>
+
+  <div class="modal" id="modalWindow">
+    <div class="modal-box">
+      <h2>Результат</h2>
+      <p id="finalResult"></p>
+      <button id="btnRestart">Почати знову</button>
+    </div>
+  </div>
+
+</body>
+</html>
